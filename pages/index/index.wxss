@@ -1,0 +1,134 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.slide-image{
+  width: 100%;
+}
+.tab-container{
+  height: 60px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* pages/detail/detail.wxss */
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+    font-size: 14px;
+    text-align: center;
+}
+.active{
+    color:#F65959;
+    /* border-bottom: 4rpx solid #F65959; */
+}
+swiper{
+  text-align: center;
+}
+.icon-list{
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.icon-list .icon{
+    width:50px;
+    height:50px;
+  }
+.icon-list .icon image{
+  width:100%;
+  height: 100%;
+}
+.main-swiper{
+  padding-bottom: 60px;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll
+}
+
+.wechat-unit{
+  height: 110px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+.wechat-unit image{
+  width: 70px;
+  height: 70px;
+}
+.wechat-unit .wechat-detail{
+  width: 100%;
+  flex: 1;
+  padding: 15px 0;
+  font-size: 14px;
+  text-align: left;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.detail-logo{
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red-text{
+  color: red;
+  margin-top: 10px;
+}
+.red-text a{
+  color: #fff;
+  background: red;
+  padding: 3px 10px;
+  border-radius: 3px;
+  float: right;
+  
+}
+
+swiper-item{
+  overflow: scroll;
+}
+.index-banner{
+  overflow: hidden;
+}
