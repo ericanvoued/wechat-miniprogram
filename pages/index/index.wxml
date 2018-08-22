@@ -1,149 +1,56 @@
 <swiper class='main-swiper' current="{{currentTab}}" duration="0" bindchange="swiperTab">
   <!-- banner -->
   <swiper-item>
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper class='index-banner' indicator-active-color="#fff" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="true" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}">
         <swiper-item class='index-banner'>
-          <image src="{{item}}" class="slide-image" width="100%" height="150" />
+          <image src="{{item}}" class="slide-image" width="100%" />
         </swiper-item>
       </block>
     </swiper>
     <!-- icon list -->
     <view class='icon-list'>
       <span class='icon'>
-        <image src='../../assest/icon/football.jpg'></image>
+        <image src='../../assest/icon/icon1.png' alt="篮球"></image>
       </span>
       <span class='icon'>
-        <image src='../../assest/icon/football.jpg'></image>
+        <image src='../../assest/icon/icon2.png' alt="棋牌"></image>
       </span>
       <span class='icon'>
-        <image src='../../assest/icon/football.jpg'></image>
+        <image src='../../assest/icon/icon3.png' alt="网球"></image>
       </span>
       <span class='icon'>
-        <image src='../../assest/icon/football.jpg'></image>
+        <image src='../../assest/icon/icon4.png' alt="游戏厅"></image>
+      </span>
+      <span class='icon'>
+        <image src='../../assest/icon/icon5.png' alt="足球"></image>
       </span>
     </view>
 
     <!-- 微信群列表 -->
     <view class='wechat-list'>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
+      <block wx:for="{{listData}}">
+        <view class='wechat-unit'>
+          <view class='detail-logo'>
+            <image src='{{item.imgUrl}}'></image>
+          </view>
+          <view class='wechat-detail'>
+            <view>{{item.text}}</view>
+
+            <view class='red-text'>{{item.title}}
+              <a href="///">查看赛事</a>
+            </view>
+          </view>
         </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
-      <view class='wechat-unit'>
-        <view class='detail-logo'>
-          <image src='../../assest/icon/football.jpg'></image>
-        </view>
-        <view class='wechat-detail'>
-          <view>其余微信群已经加满，此处位置实时更新微信号:yabo108</view>
-          
-        <view class='red-text'>亚博原生app <a href="///">查看赛事</a></view>
-        </view>
-      </view>
+      </block>
     </view>
 
   </swiper-item>
   <swiper-item>
-    <view>新闻</view>
+    <view>暂无更多新闻</view>
   </swiper-item>
   <swiper-item>
-    <view>进行中</view>
+    <view>暂无进行的活动</view>
   </swiper-item>
 </swiper>
 

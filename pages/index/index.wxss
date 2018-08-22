@@ -22,6 +22,7 @@
 
 .slide-image{
   width: 100%;
+  height: 100%;
 }
 .tab-container{
   height: 60px;
@@ -131,4 +132,7 @@ swiper-item{
 }
 .index-banner{
   overflow: hidden;
+}
+.index-banner{
+  height: 69vw;
 }
