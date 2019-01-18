@@ -4,26 +4,26 @@
     <swiper class='index-banner' indicator-active-color="#fff" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="true" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}">
         <swiper-item class='index-banner'>
-          <image src="{{item}}" class="slide-image" width="100%" />
+          <image src='../../assest/icon/banner1.jpg' class="slide-image" width="100%" />
         </swiper-item>
       </block>
     </swiper>
     <!-- icon list -->
     <view class='icon-list'>
       <span class='icon'>
-        <image src='../../assest/icon/icon1.png' alt="篮球"></image>
+        <image src='../../assest/icon/icon1.png' alt=""></image>
       </span>
       <span class='icon'>
-        <image src='../../assest/icon/icon2.png' alt="棋牌"></image>
+        <image src='../../assest/icon/icon2.png' alt=""></image>
       </span>
       <span class='icon'>
-        <image src='../../assest/icon/icon3.png' alt="网球"></image>
+        <image src='../../assest/icon/icon3.png' alt=""></image>
       </span>
       <span class='icon'>
-        <image src='../../assest/icon/icon4.png' alt="游戏厅"></image>
+        <image src='../../assest/icon/icon4.png' alt=""></image>
       </span>
       <span class='icon'>
-        <image src='../../assest/icon/icon5.png' alt="足球"></image>
+        <image src='../../assest/icon/icon5.png' alt=""></image>
       </span>
     </view>
 
@@ -32,13 +32,13 @@
       <block wx:for="{{listData}}">
         <view class='wechat-unit'>
           <view class='detail-logo'>
-            <image src='{{item.imgUrl}}'></image>
+            <image src='../../assest/icon/1.png'></image>
           </view>
           <view class='wechat-detail'>
             <view>{{item.text}}</view>
 
             <view class='red-text'>{{item.title}}
-              <a href="///">查看赛事</a>
+              <a href="///">查看详情</a>
             </view>
           </view>
         </view>

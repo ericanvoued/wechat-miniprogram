@@ -22,7 +22,7 @@
 
 .slide-image{
   width: 100%;
-  height: 100%;
+  height: 220px;
 }
 .tab-container{
   height: 60px;
