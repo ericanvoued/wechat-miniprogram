@@ -7,6 +7,7 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     imgUrls: [
@@ -23,15 +24,38 @@ Page({
     interval: 5000,
     duration: 500,
     currentTab: 0,
+    imgUrl: {
+      type: String,
+      value: ''
+    },
     iconStyle: {
       color: ['red', 'orange', 'yellow', 'green']
     },
     listData: []
   },
   onLoad: function(options) {
+    // 查看是否授权
+    wx.getSetting({
+      success(res) {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success(res) {
+              console.log(res.userInfo)
+            }
+          })
+        }
+      }
+    }),
     this.setData({
       listData: getData.list.data
     })
+  },
+  bindGetUserInfo(e) {
+    this.setData({
+      imgUrl: e.detail.userInfo.avatarUrl
+    })
+    console.log(e.detail.userInfo)
   },
   //事件处理函数
   bindViewTap: function() {
@@ -55,6 +79,9 @@ Page({
         currentTab: e.target.dataset.current
       })
     }
+  },
+  getUserInfo: function() {
+    console.log(222)
   }
 
 })

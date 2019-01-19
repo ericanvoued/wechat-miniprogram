@@ -136,3 +136,20 @@ swiper-item{
 .index-banner{
   height: 69vw;
 }
+.getUserBtn{
+  display: block;
+  padding: 5px 15px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background-color: blue;
+  color: #fff;
+  font-size: 30rpx;
+  margin: 20rpx auto;
+  width: 50%;
+
+}
+.m-i-img {
+  width: 240rpx;
+  height: 240rpx;
+  margin: 0;
+}

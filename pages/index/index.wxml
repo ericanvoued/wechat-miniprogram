@@ -52,6 +52,21 @@
   <swiper-item>
     <view>暂无进行的活动</view>
   </swiper-item>
+  <swiper-item>
+    <view>
+      <!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+      <open-data type="userAvatarUrl"></open-data>
+      <open-data type="userNickName"></open-data>
+      <!-- 需要使用 button 来授权登录 -->
+      <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+        授权登录
+      </button>
+      <view wx:else>请升级微信版本</view>
+      <block wx:if="{{imgUrl}}">
+        <image src='{{imgUrl}}' class='m-i-img'></image>
+      </block>
+    </view>
+  </swiper-item>
 </swiper>
 
 
@@ -59,4 +74,5 @@
   <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">首页</view>
   <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">新闻</view>
   <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">优惠</view>
+  <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">我的</view>
 </view>
